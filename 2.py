@@ -149,10 +149,10 @@ def main():
 
     # Вивід загального часу виконання діапазонного запиту для кожної структури
     print("\nПорівняльний аналіз продуктивності діапазонного запиту")
-    OOBTree_time_str = "{:.6f} сек.".format(total_time_tree)
-    dict_time_str = "{:.6f} сек.".format(total_time_dict)
-    print(f"Загальний час виконання діапазонного запиту для OOBTree: {OOBTree_time_str}")
-    print(f"Загальний час виконання діапазонного запиту для Dict: {dict_time_str}")
+    OOBTree_time_str = "{:.6f}".format(total_time_tree)
+    dict_time_str = "{:.6f}".format(total_time_dict)
+    print(f"Total range_query time for OOBTree: {OOBTree_time_str} seconds")
+    print(f"Total range_query time for Dict: {dict_time_str} seconds")
 
     print("\nАналіз:")
     print(" - OOBTree забезпечує швидкий діапазонний доступ через відсортовану структуру та метод items(min, max).")
